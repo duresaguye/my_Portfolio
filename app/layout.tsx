@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Duresa Guye - SWE | web developer | mobile app developer - Portfolio",
     description:
       "Frontend & Mobile App Developer from Ethiopia with 3+ years of expertise. Senior Software Engineer. Specializing mobile apps, web development and JavaScript technologies.",
-    images: "/OpenGraph.jpg",
+    images: "/portfolio-thumbnail.png",
   },
   alternates: {
     canonical: "https://ibiimemon.com/",
