@@ -30,10 +30,6 @@ const Banner: React.FC<{}> = () => {
           <Image src="/popcorn.gif" height={50} width={50} alt="chill" />
         </div>
 
-        <p className="text-md text-gray-200 my-5 max-w-[600px]">
-          Passionate Software Engineer with a focus on web development and mobile app development,
-          dedicated to crafting elegant and user-friendly applications.
-        </p>
         <div className="text-md flex justify-center">
           <button
             onClick={() => window.open("mailto:dureguye2@gmail.com")}

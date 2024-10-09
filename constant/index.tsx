@@ -1,22 +1,22 @@
 export const Social_Icons = [
   {
     link: "https://github.com/duresaguye",
-    image: "/Github.svg",
+    image: "icons/Github.svg",
     alt: "Github",
   },
   {
     link: "",
-    image: "/Instagram.svg",
+    image: "icons/Instagram.svg",
     alt: "Instagram",
   },
   {
     link: "https://www.linkedin.com/in/duresa-guye-5aba5625a/",
-    image: "/LinkedIn.svg",
+    image: "icons/LinkedIn.svg",
     alt: "LinkedIn",
   },
   {
     link: "",
-    image: "/Twitter.svg",
+    image: "icons/Twitter.svg",
     alt: "Twitter",
   },
 ];

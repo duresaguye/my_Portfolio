@@ -14,14 +14,14 @@ const Projects: React.FC<{}> = () => {
       <div className=" container mx-auto 2xl  ">
         <div className="flex-col flex md:flex-row  mt-7">
           <Link
-            href="https://web.hr/"
+            href="https://github.com/duresaguye/ethio-lost-and-found-Backend"
             rel="noopener noreferrer"
             target="_blank"
             className="z-[1]"
           >
             <div className="flex-row flex mb-5">
               <Image
-                src="/FirstProject.png"
+                src="/image.png"
                 height={150}
                 width={150}
                 alt="First Project"
@@ -62,14 +62,14 @@ const Projects: React.FC<{}> = () => {
         </div>
         <div className="flex-col flex md:flex-row ">
           <Link
-            href="https://www.vergesystems.com/"
+            href="https://techet-blog.vercel.app/"
             rel="noopener noreferrer"
             target="_blank"
             className="z-[1]"
           >
             <div className="flex-row flex mb-5">
               <Image
-                src="/ThirdProject.png"
+                src="/techet.png"
                 height={150}
                 width={150}
                 alt="VergeSystems"
@@ -86,6 +86,7 @@ const Projects: React.FC<{}> = () => {
                   react js and Tailwind CSS.
 
                 </p>
+             
               </div>
             </div>
           </Link>
