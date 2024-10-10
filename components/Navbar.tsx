@@ -79,7 +79,7 @@ const Navbar: React.FC<{}> = () => {
             About
           </a>
           <a
-            href="#Mystack"
+            href="#mystack"
             className="text-white py-3 text-center hover:bg-[#2E2E2E] transition-all duration-300"
             onClick={() => setIsMenuOpen(false)}
           >

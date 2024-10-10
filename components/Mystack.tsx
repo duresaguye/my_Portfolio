@@ -2,8 +2,10 @@ import React from 'react';
 
 const Mystack: React.FC<{}> = () => {
   return (
-    <div className="my-10 text-white">
-      <h1 className="font-bold text-green-500 text-5xl text-center"> Technology I Use </h1>
+    <div className="my-10 text-white"
+      id='mystack'
+    >
+      <h1 className="font-bold text-5xl text-center"> Technology I Use </h1>
 
       {/* Programming Languages */}
       <h2 className="font-semibold text-3xl text-center mt-10">Programming Languages</h2>
