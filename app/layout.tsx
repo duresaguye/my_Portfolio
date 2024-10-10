@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://duresa.me/"),
   title: "Duresa Guye - SWE | backend | frontend - Portfolio",
   description:
-    "Developer Portfolio of web & Mobile App Developer from Ethiopia with 2+ years of expertise. Software Engineer. Specializing mobile apps, web development and JavaScript technologies.",
+    "Developer Portfolio of web & Mobile App Developer from Ethiopia with 2+ years of expertise. Software Engineer. Specializing in mobile apps, web development and JavaScript technologies.",
   keywords: [
     "Developer",
     "Portfolio",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Duresa Guye - SWE | web developer | mobile app developer - Portfolio",
     description:
-      "web & Mobile App Developer from Ethiopia with 2+ years of expertise.  Software Engineer. Specializing mobile apps, web development and JavaScript technologies.",
-    images: "/portfolio-thumbnail1.png",
+      "Web & Mobile App Developer from Ethiopia with 2+ years of expertise. Software Engineer. Specializing in mobile apps, web development, and JavaScript technologies.",
+    images: "https://duresa.me/portfolio-thumbnail1.png", // Full URL to the image
   },
   alternates: {
     canonical: "https://duresa.me/",
