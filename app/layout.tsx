@@ -7,33 +7,35 @@ import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://duresa.me/"),
-  title: "Duresa Guye - SWE | backend | frontend - Portfolio",
+  title: "Duresa Guye - Software Engineer | Web & Mobile App Developer from Ethiopia",
   description:
-    "Developer Portfolio of web & Mobile App Developer from Ethiopia with 2+ years of expertise. Software Engineer. Specializing in mobile apps, web development and JavaScript technologies.",
+    "Explore the portfolio of Duresa Guye, a skilled Software Engineer specializing in web and mobile app development with over 2 years of experience in JavaScript, React, and Django. Based in Ethiopia, Duresa creates innovative solutions tailored to client needs.",
   keywords: [
-    "Developer",
-    "Portfolio",
-    "Developer Portfolio",
     "Duresa Guye",
-    "Next.js",
-    "React",
-    "ReactNative",
-    "Android",
-    "Django",
-    "Python",
-    "JavaScript",
-    "TypeScript",
-    "Web Development",
-    "Mobile Development",
     "Software Engineer",
+    "Web Developer",
+    "Mobile App Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "React Developer",
+    "Django Developer",
+    "JavaScript",
     "Ethiopia",
     "Addis Ababa",
+    "Developer Portfolio"
   ],
   openGraph: {
-    title: "Duresa Guye - SWE | web developer | mobile app developer - Portfolio",
+    title: "Duresa Guye - Software Engineer | Web & Mobile App Developer",
     description:
-      "Web & Mobile App Developer from Ethiopia with 2+ years of expertise. Software Engineer. Specializing in mobile apps, web development, and JavaScript technologies.",
-    images: "https://duresa.me/portfolio-thumbnail1.png",
+      "Discover the work of Duresa Guye, a Software Engineer from Ethiopia with 2+ years of expertise in web and mobile development, specializing in JavaScript, React, and Django.",
+    images: [
+      {
+        url: "https://duresa.me/portfolio-thumbnail1.png",
+        width: 800,
+        height: 600,
+        alt: "Duresa Guye - Software Engineer"
+      }
+    ],
   },
   alternates: {
     canonical: "https://duresa.me/",
