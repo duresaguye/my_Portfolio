@@ -1,18 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/react"; 
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import StarsCanvas from "@/components/main/StarsBackground";
 import Navbar from "@/components/Navbar";
 
-// Removed Inter font import
-// import { Inter } from "next/font/google"; 
-
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ibiimemon.com/"),
+  metadataBase: new URL("https://duresa.me/"),
   title: "Duresa Guye - SWE | backend | frontend - Portfolio",
   description:
-    "Developer Portfolio of Frontend & Mobile App Developer from Ethiopia with 3+ years of expertise. Senior Software Engineer. Specializing mobile apps, web development and JavaScript technologies.",
+    "Developer Portfolio of web & Mobile App Developer from Ethiopia with 2+ years of expertise. Software Engineer. Specializing mobile apps, web development and JavaScript technologies.",
   keywords: [
     "Developer",
     "Portfolio",
@@ -22,7 +19,6 @@ export const metadata: Metadata = {
     "React",
     "ReactNative",
     "Android",
-    "iOS",
     "Django",
     "Python",
     "JavaScript",
@@ -36,11 +32,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Duresa Guye - SWE | web developer | mobile app developer - Portfolio",
     description:
-      "Frontend & Mobile App Developer from Ethiopia with 3+ years of expertise. Senior Software Engineer. Specializing mobile apps, web development and JavaScript technologies.",
+      "web & Mobile App Developer from Ethiopia with 2+ years of expertise.  Software Engineer. Specializing mobile apps, web development and JavaScript technologies.",
     images: "/portfolio-thumbnail.png",
   },
   alternates: {
-    canonical: "https://ibiimemon.com/",
+    canonical: "https://duresa.me/",
   },
 };
 
@@ -56,25 +52,23 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" 
           rel="stylesheet" 
         />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-${process.env.NEXT_PRIVATE_GTID}`}
-        ></script>
+        {/* Google Analytics */}
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PRIVATE_GTID}`}></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-
-              gtag('config', 'G-${process.env.NEXT_PRIVATE_GTID}');
+              gtag('config', '${process.env.NEXT_PRIVATE_GTID}');
             `,
           }}
         />
+        {/* End Google Analytics */}
       </head>
       <body
         className="bg-[#111] overflow-y-scroll overflow-x-hidden"
-        style={{ fontFamily: 'Inter, sans-serif' }} // Apply font style directly
+        style={{ fontFamily: 'Inter, sans-serif' }} 
       >
         <SpeedInsights />
         <Analytics />
