@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Duresa Guye - SWE | web developer | mobile app developer - Portfolio",
     description:
       "web & Mobile App Developer from Ethiopia with 2+ years of expertise.  Software Engineer. Specializing mobile apps, web development and JavaScript technologies.",
-    images: "/portfolio-thumbnail.png",
+    images: "/portfolio-thumbnail1.png",
   },
   alternates: {
     canonical: "https://duresa.me/",
