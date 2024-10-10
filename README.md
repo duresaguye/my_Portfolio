@@ -1,6 +1,6 @@
-# Personal Developer Portfolio 🚀
+# Personal Portfolio 🚀
 
-[![Site preview](/public/portfolio-thumbnail1.png)](https://ibiimemon.com/)
+[![Site preview](/public/portfolio-thumbnail1.png)](https://duresa.me/)
 
 Welcome to my developer portfolio! This project showcases my skills, projects, and experience as a developer. Built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com). it not only provides a visually appealing representation of my work but also ensures optimal performance.
 
