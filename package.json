@@ -2,13 +2,13 @@
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
- 
   "scripts": {
-  "build": "next build",
-  "export": "next export",
-  "deploy": "npm run build && npm run export && git add . && git commit -m 'Deploy' && git push origin main"
-},
-
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",

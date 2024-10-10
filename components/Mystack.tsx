@@ -3,7 +3,7 @@ import React from 'react';
 const Mystack: React.FC<{}> = () => {
   return (
     <div className="my-10 text-white">
-      <h1 className="font-bold text-green-500 text-5xl text-center"> Techenology I Use </h1>
+      <h1 className="font-bold text-green-500 text-5xl text-center"> Technology I Use </h1>
 
       {/* Programming Languages */}
       <h2 className="font-semibold text-3xl text-center mt-10">Programming Languages</h2>
@@ -34,20 +34,19 @@ const Mystack: React.FC<{}> = () => {
           <p className="mt-2">React.js</p>
         </div>
         <div className="bg-transparent mt-5 mr-2 cursor-pointer rounded-3xl text-white py-2 px-5 border border-[#2E2E2E] w-max">
-          <img src="/icons/react-js.svg" alt="reactnative" className="w-12 h-12" />
+          <img src="/icons/react-js.svg" alt="React Native" className="w-12 h-12" />
           <p className="mt-2">React Native</p>
         </div>
         <div className="bg-transparent mt-5 mr-2 cursor-pointer rounded-3xl text-white py-2 px-5 border border-[#2E2E2E] w-max">
           <img src="/icons/nodejs.svg" alt="Node.js" className="w-12 h-12" />
           <p className="mt-2">Node.js</p>
         </div>
-      
         <div className="bg-transparent mt-5 mr-2 cursor-pointer rounded-3xl text-white py-2 px-5 border border-[#2E2E2E] w-max">
           <img src="/icons/django1.svg" alt="Django" className="w-12 h-12" />
           <p className="mt-2">Django</p>
         </div>
         <div className="bg-transparent mt-5 mr-2 cursor-pointer rounded-3xl text-white py-2 px-5 border border-[#2E2E2E] w-max">
-           <img src="/icons/nextjs.svg" alt="Nextjs" className="w-12 h-12" />
+           <img src="/icons/nextjs.svg" alt="Next.js" className="w-12 h-12" />
           <p className="mt-2">Next.js</p>
         </div>
       </div>
@@ -55,20 +54,17 @@ const Mystack: React.FC<{}> = () => {
       {/* Databases */}
       <h2 className="font-semibold text-3xl text-center mt-10">Databases</h2>
       <div className="flex flex-wrap justify-center items-center mt-5 space-x-6 space-y-4">
-      
         <div className="bg-transparent mt-5 mr-2 cursor-pointer rounded-3xl text-white py-2 px-5 border border-[#2E2E2E] w-max">
-           <img src="/icons/postgresql1.svg" alt="Postgresql" className="w-12 h-12" />
+          <img src="/icons/postgresql1.svg" alt="PostgreSQL" className="w-12 h-12" />
           <p className="mt-2">PostgreSQL</p>
         </div>
         <div className="bg-transparent mt-5 mr-2 cursor-pointer rounded-3xl text-white py-2 px-5 border border-[#2E2E2E] w-max">
-          <img src="/icons/mongodb.svg" alt="mongodb" className="w-12 h-12" />
+          <img src="/icons/mongodb.svg" alt="MongoDB" className="w-12 h-12" />
           <p className="mt-2">MongoDB</p>
         </div>
-        <div className="bg-transparent mt-5 mr-2 cursor-pointer rounded-3xl text-white py-2 px-5 border border-[#2E2E2E] w-max">
-          <img src="/icons/firebase1.png" alt="mongodb" className="w-12 h-12" />
-          <p className="mt-2">Firebase</p>
-        </div>
       </div>
+
+ 
 
       {/* Tools */}
       <h2 className="font-semibold text-3xl text-center mt-10">Tools</h2>
@@ -78,15 +74,13 @@ const Mystack: React.FC<{}> = () => {
           <p className="mt-2">Git</p>
         </div>
         <div className="bg-transparent mt-5 mr-2 cursor-pointer rounded-3xl text-white py-2 px-5 border border-[#2E2E2E] w-max">
-          <img src="/icons/postman1.svg" alt="Git" className="w-12 h-12" />
+          <img src="/icons/postman1.svg" alt="Postman" className="w-12 h-12" />
           <p className="mt-2">Postman</p>
         </div>
-       <div className="bg-transparent mt-5 mr-2 cursor-pointer rounded-3xl text-white py-2 px-5 border border-[#2E2E2E] w-max transform transition-transform duration-200 hover:-translate-y-1">
-  <img src="/icons/docker.svg" alt="Docker" className="w-12 h-12" />
-  <p className="mt-2">Docker</p>
-</div>
-
-
+        <div className="bg-transparent mt-5 mr-2 cursor-pointer rounded-3xl text-white py-2 px-5 border border-[#2E2E2E] w-max transform transition-transform duration-200 hover:-translate-y-1">
+          <img src="/icons/docker.svg" alt="Docker" className="w-12 h-12" />
+          <p className="mt-2">Docker</p>
+        </div>
       </div>
     </div>
   );
