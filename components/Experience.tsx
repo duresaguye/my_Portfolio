@@ -18,11 +18,11 @@ const Experience: React.FC<{}> = () => {
               alt={"experience"}
             />
             <p className="text-gray-300 ">
-              <span className="font-semibold">Web /</span> Software Engineer
+              <span className="font-semibold">Web developer/</span> Frontend Developer
             </p>
           </div>
           <p className="text-gray-300 md:pt-0 pt-3">
-            May 2023 - Present, addis ababa, Ethiopia
+            May 2023 - October 2023 addis ababa, Ethiopia
           </p>
         </div>
 
@@ -30,8 +30,8 @@ const Experience: React.FC<{}> = () => {
           
         </p>
         <div className="flex-col flex sm:flex-row ">
-          <div className="bg-transparent  mt-5 mr-2 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
-            React Native
+          <div className="bg-transparent  mt-5  mr-2 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
+            Next.js
           </div>
           <div className="bg-transparent  mt-5  mr-2 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
             React

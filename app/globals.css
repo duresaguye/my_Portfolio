@@ -6,3 +6,26 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-container {
+  display: flex;
+  overflow: hidden; /* Hides overflowing content */
+  animation: scroll-left 30s linear infinite; /* Adjusted duration for slower effect */
+}
+
+.project-item {
+  min-width: 300px; /* Width of each project item */
+  margin-right: 20px; /* Spacing between items */
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center align items */
+}
