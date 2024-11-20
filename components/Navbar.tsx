@@ -58,7 +58,13 @@ const Navbar: React.FC<{}> = () => {
           href="#mystack"
           className="text-white hover:bg-[#2E2E2E] rounded-xl py-2 px-5 transition-all duration-300"
         >
-          My Stack
+          Skill
+        </a>
+        <a
+          href="#projects"
+          className="text-white hover:bg-[#2E2E2E] rounded-xl py-2 px-5 transition-all duration-300"
+        >
+          Project
         </a>
         <div
           onClick={() => window.open("mailto:dureguye2@gmail.com")}
@@ -83,8 +89,14 @@ const Navbar: React.FC<{}> = () => {
             className="text-white py-3 text-center hover:bg-[#2E2E2E] transition-all duration-300"
             onClick={() => setIsMenuOpen(false)}
           >
-            My Stack
+            Skill
           </a>
+          <a
+          href="#projects"
+           className="text-white py-3 text-center hover:bg-[#2E2E2E] transition-all duration-300"
+        >
+          Project
+        </a>
           <div
             onClick={() => {
               window.open("mailto:dureguye2@gmail.com");

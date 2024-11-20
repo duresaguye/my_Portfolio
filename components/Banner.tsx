@@ -8,16 +8,16 @@ const Banner: React.FC<{}> = () => {
     <div className="flex flex-row items-center justify-center px-20 mt-[100px] z-[20] ">
       <div className="flex flex-col  justify-center  text-center">
         <div className="justify-center flex ">
-          <Image
-            priority
-            src="/Me.png"
-            height={250}
-            width={250}
-            alt="Duresa Guye"
-          />
-        </div>
+         <Image
+  priority
+  src="/dura.png"
+  height={250}
+  width={250}
+  alt="Duresa Guye"
+  className="rounded-full border-4 border-white shadow-lg shadow-cyan-500/50 ring-4 ring-cyan-400/50 hover:ring-cyan-500 hover:shadow-cyan-500 transition-all duration-300"
+/> </div>
 
-        <div className="flex flex-col gap-6 mt-10 cursor-pointer animate-bounce tracking-tighter text-7xl font-semibold text-white max-w-[600px] w-auto h-auto">
+        <div className="flex flex-col gap-6 mt-10 text-cyan-500 cursor-pointer animate-bounce tracking-tighter text-7xl font-semibold  max-w-[600px] w-auto h-auto">
           Duresa Guye!
         </div>
         <div className="flex justify-center">
