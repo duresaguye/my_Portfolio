@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
 import Mystack from "@/components/Mystack";
 import ScrollToTop from "@/components/ScrollToTop";
+import Resume from "@/components/Resume"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Mystack />
         <Experience />
         <Projects />
+        <Resume />
         <Footer />
       </div>
       

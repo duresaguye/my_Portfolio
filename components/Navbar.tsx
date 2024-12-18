@@ -72,6 +72,12 @@ const Navbar: React.FC<{}> = () => {
         >
           Contact
         </div>
+        <a
+          href="#resume"
+          className="text-white hover:bg-[#2E2E2E] rounded-xl py-2 px-5 transition-all duration-300"
+        >
+          Resume
+        </a>
       </div>
 
       {/* Mobile Dropdown Menu */}

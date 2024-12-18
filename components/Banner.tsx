@@ -10,7 +10,7 @@ const Banner: React.FC<{}> = () => {
         <div className="justify-center flex ">
          <Image
   priority
-  src="/dura.png"
+  src="/dura.jpg"
   height={250}
   width={250}
   alt="Duresa Guye"

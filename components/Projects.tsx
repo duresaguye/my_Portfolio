@@ -1,9 +1,68 @@
 "use client";
-import Image from "next/image";
 
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaGithub } from "react-icons/fa"; 
+import { FaGithub } from "react-icons/fa";
+
+// Reusable ProjectCard Component
+interface ProjectCardProps {
+  imageSrc: string;
+  title: string;
+  description: string;
+  githubLink: string;
+  liveLink?: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  imageSrc,
+  title,
+  description,
+  githubLink,
+  liveLink,
+}) => {
+  return (
+    <div className="flex flex-col items-center mb-10 relative">
+      {/* Image Section */}
+      <div className="w-full max-w-[300px] z-0">
+        <Image
+          src={imageSrc}
+          height={300}
+          width={300}
+          alt={title}
+          className="rounded-lg"
+        />
+      </div>
+
+      {/* Content Section */}
+      <div className="w-full text-center mt-4 z-10">
+        <h3 className="text-white font-semibold text-xl">{title}</h3>
+        <p className="text-white text-sm mt-2">{description}</p>
+        <div className="flex justify-center mt-4 space-x-4">
+          <Link
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 text-blue-400 text-sm cursor-pointer"
+          >
+            <FaGithub className="text-gray-500" />
+            <span>View Code</span>
+          </Link>
+          {liveLink && (
+            <Link
+              href={liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 text-sm cursor-pointer"
+            >
+              Visit Website
+            </Link>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Projects: React.FC<{}> = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -12,119 +71,46 @@ const Projects: React.FC<{}> = () => {
     setIsMounted(true);
   }, []);
 
- 
   if (!isMounted) {
     return null;
   }
 
   return (
-    <section id="projects">
-      <h2 className="text-white font-semibold text-center text-6xl pt-[35px]">
+    <section id="projects" className="py-16">
+      <h2 className="text-white font-semibold text-center text-4xl mb-12">
         PROJECTS
       </h2>
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {/* Project Cards */}
+        <ProjectCard
+          imageSrc="/image.png"
+          title="Ethiolost and Found"
+          description="A website that allows users to post lost and found items."
+          githubLink="https://github.com/duresaguye/ethiolostfound-frontend"
+          liveLink="https://ethiolostandfound.com"
+        />
+        <ProjectCard
+          imageSrc="/techeth.png"
+          title="Techኢት"
+          description="Techኢት Digital Solutions is a company that provides digital solutions."
+          githubLink="#"
+          liveLink="https://techeth-digital-soultion.vercel.app/"
+        />
+          <ProjectCard
+          imageSrc="/smartjobs.png"
+          title="Smart Jobs"
+          description="SmartJobs is a web-based platform designed to simplify job searching and recruitment. Built using HTML, CSS, and TailwindCSS, the platform offers a modern and responsive interface."
+          githubLink="https://github.com/duresaguye/job-portal-"
+          liveLink="https://job-searching-wbsite.netlify.app/"
+        />
+        <ProjectCard
+          imageSrc="/AAUhub.png"
+          title="AAUHub"
+          description="AAHub is a mobile app built using React Native, designed for Addis Ababa University (AAU). It centralizes departmental information, course details, and study resources."
+          githubLink="https://github.com/duresaguye/aau-info-app"
+          liveLink="#"
+        />
       
-      <div className="container mx-auto">
-        {/* First Project */}
-        <div className="flex-col flex md:flex-row mt-7">
-          <Link
-            href="https://github.com/duresaguye/ethio-lost-and-found-Backend"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="z-[1] flex-row flex mb-5"
-          >
-            <Image
-              src="/image.png"
-              height={300}
-              width={300}
-              alt="Ethiolost and Found"
-              className="rounded-lg"
-            />
-            <div className="p-3">
-              <p className="text-white font-semibold text-xl">Ethiolost and Found</p>
-              <p className="text-gray-500 text-[10px]">
-                A website that allows users to post lost and found items.
-              </p>
-              <div className="flex items-center mt-2">
-                <FaGithub className="text-gray-500 mr-1" />
-                <Link
-                  href="https://github.com/duresaguye/ethiolostfound-frontend"
-                  className="text-gray-500 text-xs"
-                >
-                  View Code
-                </Link>
-              </div>
-            </div>
-          </Link>
-        </div>
-
-        {/* Second Project */}
-        <div className="flex-col flex md:flex-row">
-          <Link
-            href="https://techet-blog.vercel.app/"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="z-[1] flex-row flex mb-5"
-          >
-            <Image
-              src="/techet.png"
-              height={300}
-              width={300}
-              alt="TechetBlog"
-              className="rounded-lg"
-            />
-            <div className="p-3">
-              <p className="text-white font-semibold text-xl">Techኢት</p>
-              <p className="text-gray-500 text-[10px]">
-                Techኢት is a website that provides users with the latest tech
-                news and updates in Ethiopia.
-              </p>
-              <div className="flex items-center mt-2">
-                <FaGithub className="text-gray-500 mr-1" />
-                <Link
-                  href="https://github.com/duresaguye/techet-blog"
-                  className="text-gray-500 text-xs"
-                >
-                  View Code
-                </Link>
-              </div>
-            </div>
-          </Link>
-        </div>
-
-        {/* Third Project */}
-        <div className="flex-col flex md:flex-row">
-          <Link
-            href="https://github.com/duresaguye/aau-info-app"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="z-[1] flex-row flex mb-5"
-          >
-            <Image
-              src="/AAUhub.png"
-              height={100}
-              width={300}
-              alt="AAUHub"
-              className="rounded-lg"
-            />
-            <div className="p-3">
-              <p className="text-white font-semibold text-xl">AAUhub</p>
-              <p className="text-gray-500 text-[10px]">
-                AAHub is a mobile app built using React Native,
-                designed for Addis Ababa University (AAU).
-                It centralizes departmental information, course details, and study resources.
-              </p>
-              <div className="flex items-center mt-2">
-                <FaGithub className="text-gray-500 mr-1" />
-                <Link
-                  href="https://github.com/duresaguye/aau-info-app"
-                  className="text-gray-500 text-xs"
-                >
-                  View Code
-                </Link>
-              </div>
-            </div>
-          </Link>
-        </div>
       </div>
     </section>
   );

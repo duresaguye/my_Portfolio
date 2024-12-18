@@ -22,7 +22,7 @@ const Experience: React.FC<{}> = () => {
             </p>
           </div>
           <p className="text-gray-300 md:pt-0 pt-3">
-            May 2023 - October 2023 addis ababa, Ethiopia
+            May 2024 - October 2024 addis ababa, Ethiopia
           </p>
         </div>
 
