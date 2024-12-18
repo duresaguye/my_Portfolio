@@ -104,6 +104,13 @@ const Projects: React.FC<{}> = () => {
           liveLink="https://job-searching-wbsite.netlify.app/"
         />
         <ProjectCard
+          imageSrc="/DrNafi.png"
+          title="Dr Nafyad Getu Clinic"
+          description="Dr. Nafyad Getu Clinic website was built using HTML, JavaScript, CSS, and Bootstrap"
+          githubLink="#"
+          liveLink="https://dr-nafyad-getu-clinick.netlify.app/"
+        />
+        <ProjectCard
           imageSrc="/AAUhub.png"
           title="AAUHub"
           description="AAHub is a mobile app built using React Native, designed for Addis Ababa University (AAU). It centralizes departmental information, course details, and study resources."
